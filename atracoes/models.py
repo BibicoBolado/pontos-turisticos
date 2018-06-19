@@ -8,6 +8,7 @@ class Atracoes(models.Model):
     horario_funcionamento=models.TextField()
     idade_minima=models.IntegerField()
     foto=models.ImageField(upload_to='atracoes',null=True,blank=True)
+    observacoes=models.CharField('OBS',max_length=150,null=True,blank=True)
 
 
     def __str__(self):
